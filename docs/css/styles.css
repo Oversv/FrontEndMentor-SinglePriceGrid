@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: #e5eff5; }
+  @media (min-width: 600px) {
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+main {
+  margin: 72px 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 15px 15px 10px rgba(152, 166, 189, 0.2); }
+  @media (min-width: 600px) {
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 640px; } }
+
+.info {
+  background-color: #fff;
+  padding: 20px; }
+  @media (min-width: 600px) {
+    .info {
+      flex: 0 0 100%;
+      padding: 35px; } }
+  .info__title {
+    margin: 6px 0 22px 0;
+    font-size: 22px;
+    color: #2ab2af;
+    font-weight: 700; }
+    @media (min-width: 600px) {
+      .info__title {
+        font-size: 24px; } }
+  .info__subtitle {
+    color: #c0df34;
+    font-size: 16px;
+    font-weight: 700; }
+    @media (min-width: 600px) {
+      .info__subtitle {
+        font-size: 18px; } }
+  .info__paragraph {
+    margin: 18px 0 14px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: #98a6bd; }
+    @media (min-width: 600px) {
+      .info__paragraph {
+        font-size: 16px;
+        margin-bottom: 0px; } }
+
+.card, .card--cyan, .card--lightCyan {
+  padding: 20px;
+  color: #fff; }
+  @media (min-width: 600px) {
+    .card, .card--cyan, .card--lightCyan {
+      flex: 0 0 50%;
+      padding: 35px; } }
+  .card__title {
+    margin: 4px 0 20px 0;
+    font-size: 18px;
+    font-weight: 700; }
+  .card__spam {
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 12px; }
+  .card__paragraph {
+    margin: 8px 0; }
+    .card__paragraph--XL {
+      margin: 8px 0;
+      display: flex;
+      align-items: center; }
+  .card__button {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #c0df34;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    margin: 14px 0 6px 0; }
+  .card__list {
+    list-style: none;
+    margin: 0px 0;
+    padding-left: 0;
+    font-size: 14px; }
+  .card__item {
+    margin: 3px 0; }
+
+.card--cyan {
+  background-color: #2ab2af; }
+
+.card--lightCyan {
+  background-color: #2ab2af;
+  opacity: .8; }
